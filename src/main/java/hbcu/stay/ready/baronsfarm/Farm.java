@@ -19,6 +19,8 @@ public class Farm {
     private Farm(){
         randomlyAddChickens();
         randomlyAddHorses();
+
+        //TODO: instantiate vehicles
     }
 
     public static Farm getInstance(){
