@@ -6,7 +6,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Field extends Farm {
+public class Field {
     ArrayList<CropRow> cropRows;
     public Field() {
 
@@ -18,6 +18,7 @@ public class Field extends Farm {
         CropRow<TomatoPlant> tomatoRow = new CropRow<>(tomatoPlants);
 
         cropRows = new ArrayList<>();
+
         cropRows.add(cornRow);
         cropRows.add(tomatoRow);
 
