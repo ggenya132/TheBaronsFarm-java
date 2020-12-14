@@ -4,11 +4,11 @@ import hbcu.stay.ready.baronsfarm.abstracts.Crop;
 
 import java.util.ArrayList;
 
-public class CropRow {
-    ArrayList<Crop> cropList;
+public class CropRow<T extends  Crop> {
+    ArrayList<T> cropList;
     boolean hasBeenFertilized = false;
 
-    public CropRow(ArrayList<Crop> cropList) {
+    public CropRow(ArrayList<T> cropList) {
         this.cropList = cropList;
     }
 

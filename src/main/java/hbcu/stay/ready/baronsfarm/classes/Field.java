@@ -10,11 +10,16 @@ public class Field extends Farm {
     ArrayList<CropRow> cropRows;
     public Field() {
 
-        ArrayList<Crop> tomatoPlants = new ArrayList<>();
-        ArrayList<Crop> cornStalks = new ArrayList<Tomato>();
-        CropRow tomatoRow = new CropRow(tomatoPlants);
-      cropRows = new ArrayList<>();
-      cropRows.add( new CropRow(new ArrayList<>()));
+        ArrayList<CornStalk> cornStalks = new ArrayList<>();
+        cornStalks.add(new CornStalk( new EarCorn()));
+        ArrayList<TomatoPlant> tomatoPlants = new ArrayList<>();
+        tomatoPlants.add(new TomatoPlant( new Tomato()));
+        CropRow<CornStalk> cornRow = new CropRow<>(cornStalks);
+        CropRow<TomatoPlant> tomatoRow = new CropRow<>(tomatoPlants);
+
+        cropRows = new ArrayList<>();
+        cropRows.add(cornRow);
+        cropRows.add(tomatoRow);
 
     }
 

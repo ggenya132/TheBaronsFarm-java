@@ -5,7 +5,7 @@ import hbcu.stay.ready.baronsfarm.interfaces.Produce;
 
 import java.util.LinkedList;
 
-public class Crop<T extends Produce>   {
+public abstract class Crop<T extends Produce>   {
     Produce produce;
     boolean hasBeenHarvested ;
 
